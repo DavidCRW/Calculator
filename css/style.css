@@ -1,5 +1,6 @@
 /* Main settings */
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -166,7 +167,7 @@ body{
     background-color: #4d4042;
 }
 .equal:hover{
-    background-color: #d6725a;;
+    background-color: #d6725a;
 }
 
 
@@ -312,4 +313,24 @@ body{
 }
 .nine:hover{
     background-color: #393031;
+}
+
+
+/* List */
+.list{
+    box-shadow: 0 0 1px white;
+    border: 1px white solid;
+    border-radius: 10px;
+    max-width: 500px;
+    background-color: #221f1f;
+    margin: 2rem auto;
+    display: grid;
+}
+
+.list h2{
+    text-align: center;
+    padding: 0.5rem;
+}
+.lists{
+    padding: 0.5rem;
 }

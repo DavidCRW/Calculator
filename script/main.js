@@ -4,6 +4,8 @@ let valueUI = document.querySelector(".valueUI");
 let number1 = "";
 let number2 = "";
 let operator;
+
+
 /* Functions */
 
 document.querySelector(".numbers").addEventListener("click", (event) =>{
@@ -36,6 +38,7 @@ document.querySelector(".equal").addEventListener("click", () =>{
     };
     number2 = ""
     number1 = valueUI.innerHTML;
+    list()
 })
 
 document.querySelector(".clear").addEventListener("click", () =>{
@@ -43,9 +46,14 @@ document.querySelector(".clear").addEventListener("click", () =>{
     number2 = "";
     operator = "";
     valueUI.innerHTML = 0;
+    document.querySelector(".lists").innerHTML = "";
 })
 
 document.querySelector(".operators").addEventListener("click", (event) =>{
     operator = event.target.id;
     valueUI.innerHTML = operator;
 })
+
+function list(){
+    document.querySelector(".lists").insertAdjacentHTML("afterbegin", `${valueUI.innerHTML} <br>`)
+}
