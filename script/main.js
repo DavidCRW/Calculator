@@ -1,6 +1,7 @@
 /* Data module */
 
-let valueUI = document.querySelector(".valueUI");
+let valueUI = document.querySelector(".firstUI");
+let secondUI = document.querySelector(".secondUI");
 let number1 = "";
 let number2 = "";
 let operator;
@@ -38,6 +39,7 @@ document.querySelector(".equal").addEventListener("click", () =>{
     };
     number2 = ""
     number1 = valueUI.innerHTML;
+    secondUI.innerHTML = number1;
     list()
 })
 

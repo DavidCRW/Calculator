@@ -51,6 +51,10 @@ body{
     border-radius: 10px;
 }
 
+.secondUI{
+    font-size: 1rem;
+}
+
 .container .operators{
     grid-area: operators;
     display: grid;
